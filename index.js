@@ -20,8 +20,4 @@ io.on('connection', function(socket){
         console.log("Disconnected,", Date(Date.now()).toString() + ',', socket.handshake.headers['x-real-ip'] + ',', socket.id + ',', socket.request.headers['user-agent'] + ',', socket.handshake.headers.referer + ',', socket.client.conn.server.clientsCount);
         socket.emit('info', socket.client.conn.server.clientsCount);
     });
-
-    socket.on('www', function (e) {
-        console.log("Disconnected", e.x);
-    });
 });
