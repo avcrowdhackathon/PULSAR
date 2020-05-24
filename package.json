@@ -1,0 +1,28 @@
+{
+  "name": "vision-stat-antivirus-crowd-hackathon-2",
+  "version": "0.0.1",
+  "description": "Real time crowd dashboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "cross-env NODE_ENV=production postcss src/style.css -o public/css/style.css",
+    "build:css": "tailwind build src/style.css -o public/css/style.css"
+  },
+  "keywords": [],
+  "author": "Vaggelis Vlachos",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "tailwindcss": "^1.4.6",
+    "ws": "^7.3.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
+    "nodemon": "^2.0.4",
+    "postcss-cli": "^7.1.1"
+  }
+}
