@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "socket.io": "^2.3.0",
     "tailwindcss": "^1.4.6",
-    "ws": "^7.3.0"
+    "ws": "^7.4.6"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
